@@ -1,0 +1,46 @@
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 0.5rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        background-color: #3d6bff;
+        min-width: max-content;
+        width: 40vw;
+        padding: 0.8rem 3rem;
+        border-radius: 4rem;
+        justify-content: space-between;
+        box-shadow: 0 0 10px 5px rgb(99, 153, 255);
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            background: var(--logoOrange);
+            margin-right: 10px;
+            transform: rotate(45deg);
+        }
+
+        &:hover::before{
+            animation:spin 1s infinite linear;
+        }
+    }
+}

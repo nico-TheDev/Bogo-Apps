@@ -27,3 +27,26 @@
         padding-bottom: #{$i}rem;
     }
 }
+
+
+.u-bg-gray-1{
+    background:var(--gray1);
+}
+
+.u-bg-gray-2{
+    background:var(--gray2);
+}
+.u-bg-blue-1{
+    background:var(--bgBlue);
+}
+.u-bg-blue-2{
+    background:var(--bgBlue2);
+}
+
+.title-big{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    width:300px;
+    line-height: 1;
+}

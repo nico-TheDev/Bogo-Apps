@@ -1,0 +1,72 @@
+.footer {
+    background: #1949e7;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__note {
+        display: grid;
+        font-weight: 900;
+        font-size: 0.9rem;
+        font-family: "Lato", sans-serif;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    & .icon {
+        display: block;
+    }
+
+    &__socialItem:hover{
+        background:white;
+    }
+
+    &__socialItem:hover .fb {
+        color: blue;
+        animation: flip 800ms ease-in-out;
+    }
+    &__socialItem:hover .twt {
+        color: cyan;
+        animation: flip 800ms ease-in-out;
+    }
+    &__socialItem:hover .yt {
+        color: red;
+        animation: flip 800ms ease-in-out;
+    }
+
+    &__socialItem {
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2f5fff;
+        border-radius: 50%;
+        font-size: 1.5rem;
+    }
+}

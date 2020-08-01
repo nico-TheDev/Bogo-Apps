@@ -1,0 +1,12 @@
+.watch {
+    background-image: url(../img/bogoschool-background.jpg);
+    background-position: center;
+    background-size: cover;
+    .container {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        gap: 2rem;
+    }
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 :root {
     --orange1: #ffb445;
@@ -15,10 +16,22 @@
     --logoRed: #f52501;
     --logoGreen: #b3f00c;
 
+    --gray1:#f7f6fe;
+    --gray2:#edeffc;
+    --bgBlue:#2f5fff;
+    --bgBlue2:#1949e7;
+
     --blueText: #5175f0;
+    --blueText2: #6b7eb6;
     --darkText: #545569;
+    --darkText2:#868db5;
+    --darkText3:#4b4e5e;
+
+    --formBg:#1949e7;
+
     --orangeGradient:linear-gradient(to bottom,var(--orange1),var(--orange2));
     --blueGradient:linear-gradient(to bottom,var(--blue1),var(--blue2));
+    --greenGradient:linear-gradient(to bottom,var(--green1),var(--green2));
 }
 
 *,

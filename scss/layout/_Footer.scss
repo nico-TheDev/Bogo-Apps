@@ -42,21 +42,15 @@
         display: block;
     }
 
-    &__socialItem:hover{
-        background:white;
-    }
 
-    &__socialItem:hover .fb {
+     .fb {
         color: blue;
-        animation: flip 800ms ease-in-out;
     }
-    &__socialItem:hover .twt {
+     .twt {
         color: cyan;
-        animation: flip 800ms ease-in-out;
     }
-    &__socialItem:hover .yt {
+     .yt {
         color: red;
-        animation: flip 800ms ease-in-out;
     }
 
     &__socialItem {
@@ -65,8 +59,13 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background-color: #2f5fff;
+        background-color: white;
         border-radius: 50%;
         font-size: 1.5rem;
+        box-shadow: 5px 5px 5px rgba(black,0.4);
+
+        &:hover a{
+            animation:flip 400ms linear;
+        }
     }
 }

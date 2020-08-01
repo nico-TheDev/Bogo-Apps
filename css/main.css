@@ -655,23 +655,16 @@ li {
   display: block;
 }
 
-.footer__socialItem:hover {
-  background: white;
-}
-
-.footer__socialItem:hover .fb {
+.footer .fb {
   color: blue;
-  animation: flip 800ms ease-in-out;
 }
 
-.footer__socialItem:hover .twt {
+.footer .twt {
   color: cyan;
-  animation: flip 800ms ease-in-out;
 }
 
-.footer__socialItem:hover .yt {
+.footer .yt {
   color: red;
-  animation: flip 800ms ease-in-out;
 }
 
 .footer__socialItem {
@@ -680,9 +673,14 @@ li {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #2f5fff;
+  background-color: white;
   border-radius: 50%;
   font-size: 1.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.footer__socialItem:hover a {
+  animation: flip 400ms linear;
 }
 
 @keyframes spin {
@@ -724,9 +722,6 @@ li {
   }
   50% {
     transform: translateY(-5px) rotateY(180deg);
-  }
-  75% {
-    transform: translateY(-5px) rotateY(360deg);
   }
   100% {
     transform: translateY(0) rotateY(0);

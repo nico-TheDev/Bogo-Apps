@@ -12,7 +12,7 @@ navBtn.addEventListener("click", () => {
     bar1.classList.toggle("bar1Open");
     bar2.classList.toggle("bar2Open");
     bar3.classList.toggle("bar3Open");
-    navBtn.style.paddingLeft = '5px';
+    navBtn.classList.toggle('padded');
 });
 
 window.addEventListener("scroll", () => {
@@ -20,4 +20,5 @@ window.addEventListener("scroll", () => {
     bar1.classList.remove("bar1Open");
     bar2.classList.remove("bar2Open");
     bar3.classList.remove("bar3Open");
+    navBtn.classList.remove('padded');
 });

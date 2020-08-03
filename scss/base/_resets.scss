@@ -45,6 +45,14 @@
 
 html {
     box-sizing: border-box;
+
+    @include query(tab){
+        font-size: 90%;
+    }
+    @include query(cp) {
+        font-size: 80%;
+    }
+
 }
 
 body {

@@ -1,12 +1,28 @@
 .footer {
     background: #1949e7;
-
+    
+    @include query(cp) {
+        padding:3rem 0;
+    }
     .container {
         display: flex;
         justify-content: space-between;
 
         & > *:not(:last-child) {
             margin-right: 1rem;
+
+            
+        @include query(tab){
+            margin-right:0;
+        }
+        }
+
+        
+        @include query(tab){
+            display:grid;
+            gap:2rem;
+            justify-items: center;
+            justify-content: center;
         }
     }
 
@@ -15,6 +31,12 @@
         font-weight: 900;
         font-size: 0.9rem;
         font-family: "Lato", sans-serif;
+
+        
+        @include query(tab){
+            grid-template-columns: 1fr 1fr;
+            order:9;
+        }
 
         a:hover {
             text-decoration: underline;
@@ -27,7 +49,20 @@
 
         & > *:not(:last-child) {
             margin-right: 2rem;
+            @include query(cp) {
+                margin-right: 0;
+            }
+        
         }
+
+
+        @include query(cp) {
+            display:grid;
+            gap:1rem;
+            justify-items: center;
+            text-align: center;
+        }
+    
     }
 
     &__social {
